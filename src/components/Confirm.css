@@ -1,0 +1,139 @@
+/* Confirm.css */
+.confirm {
+    text-align: center;
+  margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .confirmation-content h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .email-confirmation {
+    
+    width: 47rem;
+  
+    border-radius: 8px;
+   
+    margin: auto;
+    color: gray;
+  }
+  
+  .email {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .confirm-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+   
+  }
+  
+
+  .confirm-page {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .confirm-header {
+    display: flex;
+    justify-content: space-between;
+    
+  margin: .3rem 1rem;
+    background: #ffffff; 
+  }
+  
+  .confirm-header .logo {
+    font-family: 'Cedarville Cursive', cursive; 
+    color: #ea4c89; 
+    font-weight: 600;
+    font-size: 2rem; 
+    cursor: pointer;
+  }
+  
+  .confirm-nav a {
+    text-decoration: none;
+   
+    margin: 0rem 1rem; /* Space between links */
+
+    font-size: 1rem; /* Adjust as needed */
+  }
+  
+  .confirm-nav .search-link {
+    /* Style for search link, potentially an icon */
+  }
+  
+   .upload-button {
+    /* Additional styles for upload button if different from regular links */
+    background: #ea4c89; /* Button background color */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-left: 2rem;
+  }
+
+  .confirm-nav{
+    font-family: "Roboto", sans-serif;
+    margin: 1rem 0rem;
+ 
+    >img{
+        height: 3rem;
+        width: 4rem;
+        margin-bottom: -1rem;
+    }
+  }
+  
+  .search{
+    padding: .5rem .5rem;
+    margin: .5rem;
+    border-radius: 4rem;
+    
+  }
+
+  .color{
+    color: rgba(128, 128, 128, 0.905);
+  }
+
+
+  .icon{
+    color: gray;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .email-confirmation {
+      max-width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .confirm-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .confirm-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .confirm-nav a {
+      margin: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .confirm-header .logo {
+      font-size: 1.5rem;
+    }
+  
+    .upload-button {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }

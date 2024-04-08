@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Coiny&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sign-page {
+    margin: 1.5rem 24rem;
+}
+
+.avatar-section1 {
+    margin: 3rem 24rem;
+}
+
+.avatar-section1 > h1 {
+    margin-bottom: .5rem;
+}
+
+.avatar-sectionStart {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.avatar-placeholder1 > img {
+    margin-left: -2rem;
+    width: 14rem;
+    height: 10rem;
+}
+
+.choose-image-btn {
+    margin: 2.5rem 0rem;
+    color: black;
+    width: 8rem;
+    height: 2rem;
+    background-color: #fff;
+    border: 0.125rem solid rgba(128, 128, 128, 0.212);
+    border-radius: 0.25rem;
+    font-family: "Poppins";
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.location-section {
+    margin: 3rem 24rem;
+}
+
+#location {
+    width: 78%;
+    background-color: #fff;
+    border: 2px solid whitesmoke;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(128, 128, 128, 0.833);
+}
+
+.next-btn1 {
+    margin-inline: 24rem;
+    width: 12rem;
+    padding: .5rem .5rem;
+    border: none;
+    background-color: #d44179;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.SignPageContainer1 > h1 {
+    font-family: "Cedarville Cursive", cursive;
+    color: #d44179;
+    margin: 0rem 1rem;
+}
+
+.return {
+    margin: 1rem 27rem;
+    font-family: "Roboto", sans-serif;
+    color: gray;
+}
+
+/* Responsive adjustments */
+
+
+@media (max-width: 1000px) and (min-width: 900px) {
+    .sign-page, .avatar-section1, .location-section, .return, .next-btn1 {
+        margin: 1rem 15%; 
+    }
+
+    .avatar-section1, .location-section {
+        margin: 2rem 15%;
+    }
+
+    .avatar-placeholder1 > img {
+        width: 12rem;
+        height: 9rem;
+    }
+
+    .choose-image-btn, #location, .next-btn1 {
+        width: 90%; 
+        margin: 1.5rem auto;
+    }
+
+    .next-btn1, .return {
+        margin-inline: 15%;
+    }
+
+    .SignPageContainer1 > h1, .avatar-section1 > h1 {
+        font-size: 1.2rem; 
+    }
+}
+@media (max-width: 900px) {
+    .sign-page, .avatar-section1, .location-section, .return, .next-btn1 {
+        margin: 1rem 10%;
+    }
+
+    .next-btn1, .return {
+        margin-inline: 10%;
+    }
+}
+
+@media (max-width: 700px) {
+    .avatar-placeholder1 > img {
+        width: 10rem;
+        height: 7.5rem;
+    }
+
+    .choose-image-btn, #location, .next-btn1 {
+        width: auto;
+      
+        margin-right: 10%;
+    }
+
+    .next-btn1, .return {
+        margin-inline: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .sign-page, .avatar-section1, .location-section, .return, .next-btn1 {
+        margin: 1rem 5%;
+    }
+
+    .avatar-sectionStart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar-placeholder1 > img {
+        margin-left: 0;
+    }
+
+    .choose-image-btn, #location, .next-btn1 {
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .next-btn1{
+        margin-inline: 9%;
+        width: 10rem;
+    }
+
+    .return {
+        margin-inline: 9%;
+    }
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.leftDiv {
+    background-image: url(../assets/13824.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35%;
+    height: 100vh;
+}
+
+.RighContainer {
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.RightDiv {
+    margin-top: 4rem;
+    width: 400px;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.error-message, .terms {
+    font-family: "Poppins", sans-serif;
+    color: rgba(128, 128, 128, 0.864);
+}
+
+.termsSpan {
+    color: blue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > button {
+    background-color: #ea4c89;
+    color: white;
+    padding: 10px 5px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.248);
+}
+
+.input-error {
+    border-color: red;
+    background-color: #ffe5e5;
+}
+
+.error-tooltip {
+    display: block;
+    background-color: #ffe5e5;
+    color: red;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #d44179;
+}
+
+.signin a {
+    text-decoration: none;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.input-group:last-child {
+    margin-right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    .leftDiv, .RighContainer {
+        width: 100%;
+    }
+    .RightDiv {
+        margin-top: 1rem;
+        width: 90%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .RightDiv {
+        width: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    .RightDiv, form {
+        width: 100%;
+        padding: 0 20px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .input-row {
+        flex-direction: column;
+    }
+    .input-group {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .input-group:last-child {
+        margin-bottom: 0;
+    }
+}
